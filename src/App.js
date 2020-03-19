@@ -20,7 +20,7 @@ import './App.css';
 import AddCar from './components/Admin/AddCar';
 import UploadCarPic from './components/Admin/UploadCarPic';
 import Password from './components/User/Password';
-
+import AddUserCar from './components/User/AddUserCar'
 
 
 
@@ -61,7 +61,8 @@ class App extends React.Component {
           <Route exact path='/dashboard/addcar/:id' component={AddCar} />
           <Route exact path='/dashboard/updatecar' component={UpdateCar} />
           <Route exact path='/dashboard/carpic/:id' component={UploadCarPic} />
-          <Route exact path ='/password/:id' component={Password}/>
+          <Route exact path='/password/:id' component={Password} />
+          <Route exact path='/user/addcar/:id' component={AddUserCar} />
         </Switch>
       </BrowserRouter>
     );

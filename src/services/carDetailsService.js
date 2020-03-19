@@ -6,15 +6,15 @@ export const getCarsDetails = async () => {
         const res = await api.get(baseURL + '/api/cars')
         return res.data
     } catch (error) {
-
+        return error
     }
 }
 export const getCarDetails = async (model) => {
     try {
         const res = await api.get(`${baseURL}/api/cars/model/${model}`)
-        return res.data
+        return res
     } catch (error) {
-
+        return error
     }
 }
 
@@ -23,7 +23,7 @@ export const addCarDetails = async (car) => {
         const res = await api.post(baseURL + '/api/cars', car)
         return res
     } catch (error) {
-
+        return error
     }
 }
 
