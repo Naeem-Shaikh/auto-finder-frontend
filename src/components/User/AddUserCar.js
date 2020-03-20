@@ -73,6 +73,7 @@ class AddCar extends React.Component {
         const carDetails = { ...this.state.carDetails }
         carDetails[e.target.name] = e.target.value
         carDetails.userId = this.state.id
+        carDetails.userName = this.state.username
         this.setState({ carDetails, errMsg: '' })
     }
 

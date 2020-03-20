@@ -71,6 +71,7 @@ class CarDetails extends React.Component {
                                     <p>Body Type: {car.bodyType}</p>
                                     <p>Transmission: {car.transmission}</p>
                                     <p className="card-text">{car.description}</p>
+                                    <p className="card-text">Posted By:{car.userName}</p>
                                 </div>
                             </div>
                         })

@@ -1,7 +1,7 @@
 import React from 'react'
 import { getUser } from '../../services/userService'
 import { getCarsDetails } from '../../services/carDetailsService'
-import { Link, Route } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Moment from 'react-moment'
 
 
@@ -28,9 +28,7 @@ class Profile extends React.Component {
     }
 
     render() {
-        console.log(this.filterCarsByUserId())
         const carList = this.filterCarsByUserId()
-
         return (
             <div className='container'>
                 <div className="alert alert-info" role="alert">

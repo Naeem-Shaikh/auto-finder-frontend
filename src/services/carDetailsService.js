@@ -12,7 +12,7 @@ export const getCarsDetails = async () => {
 export const getCarDetails = async (model) => {
     try {
         const res = await api.get(`${baseURL}/api/cars/model/${model}`)
-        return res
+        return res.data
     } catch (error) {
         return error
     }
